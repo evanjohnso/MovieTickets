@@ -10,13 +10,13 @@
   <body>
     <div class="container">
       <h1>Movie Tickets</h1>
-      <form>
+      <form id="movies">
         <div class="form-group">
-          <select class="form-control" id="movies">
-            <option>Spider-Man</option>
-            <option>Wonder Woman</option>
-            <option>Baby Driver</option>
-            <option>Cinderella</option>
+          <select class="form-control" id="features">
+            <option value="Spider-Man">Spider-Man</option>
+            <option value="Wonder Woman">Wonder Woman</option>
+            <option value="Baby Driver">Baby Driver</option>
+            <option value="Cinderalla">Cinderella</option>
           </select>
         </div>
 
@@ -27,17 +27,23 @@
           <div class="radio">
             <label><input type="radio" name="time" value="8" >Matinee</label>
           </div>
+          <div class="radio">
+            <label><input type="radio" name="time" value="14">3D</label>
+          </div>
         </div>
 
         <div class="form-group">
           <div class="radio">
-            <label><input type="radio" name="age" value="10" checked>Adult</label>
+            <label><input type="radio" name="age" value="0" checked>Adult</label>
           </div>
           <div class="radio">
-            <label><input type="radio" name="age" value="8" >Child</label>
+            <label><input type="radio" name="age" value="-2" >Child</label>
           </div>
           <div class="radio">
-            <label><input type="radio" name="age" value="8" >Senior</label>
+            <label><input type="radio" name="age" value="-4" >Senior</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="age" value="-3" >Student</label>
           </div>
         </div>
 
