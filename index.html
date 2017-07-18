@@ -8,48 +8,63 @@
     <title>Movie Tickets</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Movie Tickets</h1>
-      <form id="movies">
-        <div class="form-group">
-          <select class="form-control" id="features">
-            <option value="Spider-Man">Spider-Man</option>
-            <option value="Wonder Woman">Wonder Woman</option>
-            <option value="Baby Driver">Baby Driver</option>
-            <option value="Cinderalla">Cinderella</option>
-          </select>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>Epicodus Movie Madness!!</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-5 movieTix">
+          <h1>Movie Tickets</h1>
+          <form id="movies">
+            <div class="form-group">
+              <select class="form-control" id="features">
+                <option value="Spider-Man">Spider-Man</option>
+                <option value="Wonder Woman">Wonder Woman</option>
+                <option value="Baby Driver">Baby Driver</option>
+                <option value="Cinderalla">Cinderella</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <div class="radio">
+                <label><input type="radio" name="time" value="10" checked>Evening</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="time" value="8" >Matinee</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="time" value="14">3D</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="radio">
+                <label><input type="radio" name="age" value="0" checked>Adult</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="age" value="-2" >Child</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="age" value="-4" >Senior</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="age" value="-3" >Student</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ticketNumber">Quantity: </label>
+              <input type="number" class="form-control quantitySize" id="ticketNumber" placeholder="1">
+            </div>
+
+            <button type="submit" class="btn btn-success">Checkout</button>
+          </form>
         </div>
-
-        <div class="form-group">
-          <div class="radio">
-            <label><input type="radio" name="time" value="10" checked>Evening</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="time" value="8" >Matinee</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="time" value="14">3D</label>
-          </div>
+        <div class="col-md-5 receipt">
+          <h2>Your Movie Ticket Receipt: </h2>
+          <p>You are going to see: <span id="filmTitle"></span> at the  <span id="filmTime"></span>showing! </p>
+          <p>Your price will be: $ <span id="filmPrice"></span></p>
         </div>
-
-        <div class="form-group">
-          <div class="radio">
-            <label><input type="radio" name="age" value="0" checked>Adult</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="age" value="-2" >Child</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="age" value="-4" >Senior</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="age" value="-3" >Student</label>
-          </div>
-        </div>
-
-        <button type="submit" class="btn btn-success">Checkout</button>
-      </form>
-
+      </div>
     </div>
   </body>
 </html>
