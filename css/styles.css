@@ -7,7 +7,11 @@ body {
   background: url('background.jpeg') lightgrey;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: #21385b;
+}
+
+.col-md-5 {
+  background: darkgrey;
 }
 
 .receipt{
@@ -21,14 +25,12 @@ body {
 }
 
 .movieTix {
-  background: lightgrey;
   padding-bottom: 2%;
   border-radius: 2%;
   margin-left: 2%;
 }
 
 .receipt {
-  background: lightgrey;
   border-radius: 2%;
   float: right;
   margin-right: 2%;

@@ -9,9 +9,9 @@ function MovieSpec (title, time, age, number) {
 MovieSpec.prototype.movieTitle = function () {
   if (this.time === 10) {
     return "Evening ";
-  } else if (this.time === 8){
+  } else if (this.time === 8) {
     return "Matinee ";
-  } else {
+  } else if (this.time === 14) {
     return "3D ";
   }
 }
@@ -33,10 +33,10 @@ $(document).ready(function() {
 
     var newPerson = new MovieSpec(featureTitle, movieTime, userAge, quantity);
 
-
     $(".receipt").show();
     $("#filmTitle").text(newPerson.feature);
     $("#filmTime").text(newPerson.movieTitle() );
+    $("#filmQuantity").text(newPerson.quantity);
     $("#filmPrice").text(newPerson.price());
 
   });
